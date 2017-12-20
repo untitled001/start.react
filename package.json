@@ -1,0 +1,54 @@
+{
+  "name": "start.react",
+  "version": "1.0.0",
+  "description": "react-redux boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/untitled001/start.react.git"
+  },
+  "author": "untitled001",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/untitled001/start.react/issues"
+  },
+  "homepage": "https://github.com/untitled001/start.react#readme",
+  "dependencies": {
+    "history": "^4.7.2",
+    "immutable": "^3.8.2",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.0.6",
+    "react-router-dom": "^4.2.2",
+    "react-router-redux": "^5.0.0-alpha.9",
+    "react-saga": "^0.2.6",
+    "redux": "^3.7.2",
+    "redux-saga": "^0.16.0",
+    "reselect": "^3.0.1",
+    "webpack-dev-server": "^2.9.7",
+    "webpack-init": "^0.1.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "css-loader": "^0.28.7",
+    "eslint": "^4.13.1",
+    "eslint-plugin-react": "^7.5.1",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.6",
+    "html-webpack-plugin": "^2.30.1",
+    "prop-types": "^15.6.0",
+    "redux-devtools": "^3.4.1",
+    "webpack": "^3.10.0"
+  }
+}
