@@ -4,15 +4,15 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const paths = {
     DIST: path.resolve(__dirname, 'dist'),
-    SRC: path.resolve(__dirname, 'src'),
-    JS: path.resolve(__dirname, 'src/js')
+    SRC: path.resolve(__dirname, 'src')
 };
 
 module.exports = {
-    entry: path.join(paths.JS, 'app.js'),
+    entry: path.join(paths.SRC, 'app.js'),
     output: {
         path: paths.DIST,
-        filename: 'app.bundle.js'
+        filename: 'app.bundle.js',
+        publicPath: '/'
     },
     plugins: [
         new HtmlWebpackPlugin({
@@ -20,7 +20,9 @@ module.exports = {
         }),
         new ExtractTextPlugin('style.bundle.css'),
     ],
-
+    devServer: {
+        historyApiFallback: true
+    },
     module: {
         rules: [
             {
@@ -43,5 +45,8 @@ module.exports = {
         ]
     },
 
-    resolve: { extensions: ['.js', '.jsx'] }
+    resolve: { 
+        modules: ['src', 'node_modules'],        
+        extensions: ['.js', '.jsx'] 
+    }
 };
